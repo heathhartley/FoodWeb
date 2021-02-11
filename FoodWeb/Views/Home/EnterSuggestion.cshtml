@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model FoodWeb.Models.AddResturant
+
+
+
+<form asp-action="EnterSuggestion" method="post">
+    <div asp-validation-summary="All">
+        
+    </div>
+    <div>
+        <label asp-for="Restuarant">RestuarantName: </label>
+        <input asp-for="Restuarant" />
+    </div>
+    <div>
+        <label asp-for="Favorite">FavoriteDish: </label>
+        <input asp-for="Favorite" />
+    </div>
+    <div>
+        <label asp-for="Address">Address: </label>
+        <input asp-for="Address" />
+    </div>
+
+
+    <div>
+        <label asp-for="Phone">PhoneNum: </label>
+        <input asp-for="Phone" />
+    </div>
+    <div>
+        <label asp-for="Link">Link: </label>
+        <input asp-for="Link" />
+            
+    </div>
+    
+    <button type="submit">Add Dish</button>
+</form>
+

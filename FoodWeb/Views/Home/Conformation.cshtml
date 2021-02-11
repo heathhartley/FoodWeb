@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Thank you for suggesting " + Model.Restuarant + ".";
+}
+@model FoodWeb.Models.AddResturant
+
+<h1>@ViewBag.Title</h1>
+<div>
+    <p>
+        @if (Model.Restuarant == "Wendys")
+        {
+            @:Actually we cannot display that returant becaue it is the worst. Please reconsider your food choices!
+        }
+        else
+        {
+            @: Great! That resturant should be added to the list of other great resturants. Check it out below!
+        }
+
+
+        <a href="ListofSuggestions">Click here</a>
+    </p>
+</div>
